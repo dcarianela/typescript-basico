@@ -27,6 +27,7 @@ type Status = "ativo" | "inativo" | "pendente";
 let situacaoAluno1: Status = "ativo";
 let situacaoAluno2: Status = "inativo";
 let situacaoAluno3: Status = "pendente";
+console.log(situacaoAluno3);
 
 separador();
 
@@ -38,3 +39,28 @@ type DiasDaSemana =
 
 const diaAtual: DiasDaSemana = "Quarta-feira";
 console.log(diaAtual);
+
+separador();
+
+/* Interseção de Tipos */
+type Pessoa = { nome: string; idade: number };
+type Funcionario = { salario: number };
+
+const programador: Pessoa & Funcionario = {
+  nome: "Heesung",
+  idade: 23,
+  salario: 10000,
+};
+
+console.log(programador);
+
+separador();
+
+// Criando um novo tipo a partir da interseção de outro tipos
+type Colaborador = Pessoa & Funcionario;
+const outroProgramador: Colaborador = {
+  nome: "Sunghoon",
+  idade: 22,
+  salario: 7000,
+};
+console.log(outroProgramador);

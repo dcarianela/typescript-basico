@@ -17,6 +17,21 @@ console.log("Exemplo B: " + exemploB);
 let situacaoAluno1 = "ativo";
 let situacaoAluno2 = "inativo";
 let situacaoAluno3 = "pendente";
+console.log(situacaoAluno3);
 (0, modulos_1.separador)();
 const diaAtual = "Quarta-feira";
 console.log(diaAtual);
+(0, modulos_1.separador)();
+const programador = {
+    nome: "Heesung",
+    idade: 23,
+    salario: 10000,
+};
+console.log(programador);
+(0, modulos_1.separador)();
+const outroProgramador = {
+    nome: "Sunghoon",
+    idade: 22,
+    salario: 7000,
+};
+console.log(outroProgramador);
