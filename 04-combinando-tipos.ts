@@ -27,3 +27,14 @@ type Status = "ativo" | "inativo" | "pendente";
 let situacaoAluno1: Status = "ativo";
 let situacaoAluno2: Status = "inativo";
 let situacaoAluno3: Status = "pendente";
+
+separador();
+
+type DiasDaSemana =
+  | "Domingo"
+  | "Segunda-feira"
+  | "Terça-feira"
+  | "Quarta-feira";
+
+const diaAtual: DiasDaSemana = "Quarta-feira";
+console.log(diaAtual);
